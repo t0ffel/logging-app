@@ -30,11 +30,10 @@ objects:
         uri: https://github.com/t0ffel/logging-app.git
       type: Git
     strategy:
-      dockerStrategy:
+      sourceStrategy:
         from:
           kind: DockerImage
           name: centos/python-36-centos7
-      type: Docker
     successfulBuildsHistoryLimit: 5
     triggers:
     - type: ConfigChange
