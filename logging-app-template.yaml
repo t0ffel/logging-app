@@ -37,6 +37,7 @@ objects:
       type: Docker
     successfulBuildsHistoryLimit: 5
     triggers:
+    - type: ConfigChange
 - apiVersion: apps.openshift.io/v1
   kind: DeploymentConfig
   metadata:
